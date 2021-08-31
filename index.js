@@ -1,7 +1,6 @@
 const Employee = require('./lib/Employee');
+const Manager = require('./lib/Manager');
+const Engineer = require('./lib/Engineer');
+const Intern = require('./lib/Intern');
+const inq = require('inquirer');
 
-const someone = new Employee()
-
-someone.getName()
-
-console.log(someone.name)
