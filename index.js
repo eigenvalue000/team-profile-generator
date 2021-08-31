@@ -8,9 +8,30 @@ const fs = require('fs');
 inq.prompt([
     {
         type: 'input',
-        name: 'somename',
-        message: 'hey hey hey'
-    }
+        name: 'managerName',
+        message: 'Enter the team manager\'s name : '
+    },
+    {
+        type: 'input',
+        name: 'managerId',
+        message: 'Enter the team manager\'s ID number : '
+    },
+    {
+        type: 'input',
+        name: 'managerEmail',
+        message: 'Enter the team manager\'s email address : '
+    },
+    {
+        type: 'input',
+        name: 'managerOfficeNumber',
+        message: 'Enter the team manager\'s office number : '
+    },
+    {
+        type: 'list',
+        name: 'optionsList',
+        message: 'Pick an option to continue : ',
+        choices: ['Add an engineer.', 'Add an intern.', 'Finish building team.']
+    },
 ]).then((ans) => {
     console.log(ans)
 }).catch((err) => {
