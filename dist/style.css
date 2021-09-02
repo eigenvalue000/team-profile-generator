@@ -1,0 +1,33 @@
+body {
+    background-color: grey;
+}
+header {
+    display: flex;
+    background-color: red;
+    height: 100px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+#card-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+#card {
+    display: block;
+    border: solid 5px black;
+    text-align: center;
+    background-color: white;
+    height: 150px;
+    width: 200px;;
+}
+
+#card-title {
+    display: block;
+    font-size: 20px;
+}

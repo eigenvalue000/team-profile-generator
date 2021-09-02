@@ -4,7 +4,7 @@ const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
 const inq = require('inquirer');
 inq.registerPrompt('recursive', require('inquirer-recursive'));
-const fs = require('fs');
+const gen = require('./lib/genHtml');
 
 const team = [];
 
@@ -72,7 +72,7 @@ function employeePrompt() {
                     },
                     {
                         name: 'github',
-                        message: 'Engineer\'s Github : ',
+                        message: 'Engineer\'s Github username : ',
                         when: (ans) => ans.employeeType === 'Engineer'
                     },
                     {
@@ -110,7 +110,9 @@ function employeePrompt() {
                     resolve(team);
                 } 
             }
-            console.log(team);
+            // console.log(team);
+            // Write HTML file here
+            gen.genHtml('test1.html', team)
         })
     })
 }
