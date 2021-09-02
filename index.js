@@ -34,7 +34,7 @@ function managerPrompt() {
         ]).then((ans) => {
             const manager = new Manager(ans.name, ans.id, ans.email, ans.officeNumber);
             team.push(manager);
-            resolve(team)
+            resolve(team);
         })
     })
 }
@@ -97,7 +97,18 @@ function employeePrompt() {
 
             }
         ]).then(ans => {
-            console.log(ans.employeeTeam)
+            for (let i = 0; i < ans.employeeTeam.length; i++) {
+                if (ans.employeeTeam[i].employeeType === 'Engineer') {
+                    const engineer = new Engineer(ans.employeeTeam[i].name, ans.employeeTeam[i].id, ans.employeeTeam[i].email, ans.employeeTeam[i].github);
+                    team.push(engineer);
+                    resolve(team);
+                } else if (ans.employeeTeam[i].employeeType === 'Intern') {
+                    const intern = new Intern(ans.employeeTeam[i].name, ans.employeeTeam[i].id, ans.employeeTeam[i].email, ans.employeeTeam[i].school);
+                    team.push(intern);
+                    resolve(team);
+                } 
+            }
+            console.log(team);
         })
     })
 }
@@ -106,9 +117,6 @@ async function init() {
     console.log('calling');
     const managerResult = await managerPrompt();
     const employeeResult = await employeePrompt();
-    console.log(managerResult);
-    console.log(employeeResult)
-
 }
 
 init();
