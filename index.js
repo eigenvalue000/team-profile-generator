@@ -112,7 +112,7 @@ function employeePrompt() {
             }
             // console.log(team);
             // Write HTML file here
-            gen.genHtml('test1.html', team)
+            gen.genHtml('index.html', team)
         })
     })
 }
