@@ -32,3 +32,23 @@ header {
     font-size: 20px;
     border: solid 1px black;
 }
+
+#employee-name {
+    border: solid 1px black;
+    margin-top: 10px;
+    
+}
+
+#employee-id {
+    margin-top: 15px;
+    border-top: solid 1px black;
+}
+
+#employee-email {
+    display: block;
+}
+
+#employee-misc {
+    display: block;
+    
+}
