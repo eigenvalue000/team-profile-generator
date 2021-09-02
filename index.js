@@ -8,6 +8,7 @@ const fs = require('fs');
 
 const team = [];
 
+// This function prompts the user for the manager's inputs.
 function managerPrompt() {
     return new Promise(resolve => {
         inq.prompt([
@@ -39,6 +40,7 @@ function managerPrompt() {
     })
 }
 
+// This function prompts the user for each employees inputs.
 function employeePrompt() {
     return new Promise(resolve => {
         inq.prompt([
@@ -113,6 +115,8 @@ function employeePrompt() {
     })
 }
 
+// This is an async function to call the managerPrompt and employeePrompt
+// functions using the await keyword.
 async function init() {
     console.log('calling');
     const managerResult = await managerPrompt();
