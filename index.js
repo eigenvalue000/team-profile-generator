@@ -56,33 +56,48 @@ function employeePrompt() {
                     {
                         name: 'name',
                         message: 'Engineer\'s name : ',
-                        when: ({ employeeType }) => employeeType === 'Engineer'
+                        when: (ans) => ans.employeeType === 'Engineer'
                     },
                     {
                         name: 'id',
                         message: 'Engineer\'s ID : ',
-                        when: ( {employeeType} ) => employeeType === 'Engineer'
+                        when: (ans) => ans.employeeType === 'Engineer'
                     },
                     {
                         name: 'email',
                         message: 'Engineer\'s email : ',
-                        when: ( {employeeType} ) => employeeType === 'Engineer'
+                        when: (ans) => ans.employeeType === 'Engineer'
                     },
                     {
                         name: 'github',
                         message: 'Engineer\'s Github : ',
-                        when: ( {employeeType} ) => employeeType === 'Engineer'
+                        when: (ans) => ans.employeeType === 'Engineer'
                     },
                     {
                         name: 'name',
                         message: 'Intern\'s name : ',
-                        when: ({ employeeType }) => employeeType === 'Intern'
+                        when: (ans) => ans.employeeType === 'Intern'
+                    },
+                    {
+                        name: 'id',
+                        message: 'Intern\'s ID : ',
+                        when: (ans) => ans.employeeType === 'Intern'
+                    },
+                    {
+                        name: 'email',
+                        message: 'Intern\'s email : ',
+                        when: (ans) => ans.employeeType === 'Intern'
+                    },
+                    {
+                        name: 'school',
+                        message: 'Intern\'s school : ',
+                        when: (ans) => ans.employeeType === 'Intern'
                     }
                 ]
 
             }
         ]).then(ans => {
-           console.log(ans.employeeTeam.length)
+            console.log(ans.employeeTeam)
         })
     })
 }
