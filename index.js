@@ -16,8 +16,23 @@ function managerPrompt() {
                 name: 'name',
                 message: 'Manager name : '
             },
+            {
+                type: 'input',
+                name: 'id',
+                message: 'Manager ID : ',
+            },
+            {
+                type: 'input',
+                name: 'email',
+                message: 'Manager email : ',
+            },
+            {
+                type: 'input',
+                name: 'officeNumber',
+                message: 'Manager office number : ',
+            }
         ]).then((ans) => {
-            const manager = new Manager(ans.name, 1, 'gm', 1);
+            const manager = new Manager(ans.name, ans.id, ans.email, ans.officeNumber);
             team.push(manager);
             resolve(team)
         })
