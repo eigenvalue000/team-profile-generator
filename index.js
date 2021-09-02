@@ -39,10 +39,10 @@ function managerPrompt() {
     })
 }
 
-async function asyncCall() {
+async function init() {
     console.log('calling');
     const result = await managerPrompt();
     console.log(result);
 }
 
-asyncCall();
+init();
