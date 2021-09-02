@@ -39,10 +39,37 @@ function managerPrompt() {
     })
 }
 
+function employeePrompt() {
+    return new Promise(resolve => {
+        inq.prompt([
+            {
+                type: 'list',
+                name: 'employeeType',
+                message: 'Add an employee to the team : ',
+                choices: ['Engineer', 'Intern',
+                    {
+                        name: 'Finish building team.',
+                        value: false
+                    }
+                ]
+            }
+        ]).then(ans => {
+            if (ans.employeeType) {
+                console.log('Selected an employee')
+            } else {
+                console.log('Building team.')
+            }
+        })
+    })
+}
+
 async function init() {
     console.log('calling');
-    const result = await managerPrompt();
-    console.log(result);
+    const managerResult = await managerPrompt();
+    const employeeResult = await employeePrompt();
+    console.log(managerResult);
+    console.log(employeeResult)
+    
 }
 
 init();
