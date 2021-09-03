@@ -16,9 +16,21 @@ describe('Employee', () => {
         });
     });
 
-    describe('id property', () => {});
+    describe('id property', () => {
+        it('Should set the id of the Employee using the constructor', () => {
+            const id = '2.71828';
+            const e = new Employee('Leonard Euler', id);
+            expect(e.id).toBe(id);
+        })
+    });
     
-    describe('email property', () => {});
+    describe('email property', () => {
+        it('Should set the email of the Employee using the constructor', () => {
+            const email = 'euler@gmail.com';
+            const e = new Employee('Leonard Euler', '2.71828', email);
+            expect(e.email).toBe(email);
+        })
+    });
 
     describe('getName() method', () => {});
 
