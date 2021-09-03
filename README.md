@@ -66,7 +66,7 @@ https://www.mit.edu/~amini/LICENSE.md
 
 
 ## Tests
-Coming soon.
+Part of employee tests are available. More to come.
 
 ## Questions
 
