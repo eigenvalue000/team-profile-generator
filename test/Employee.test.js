@@ -32,11 +32,35 @@ describe('Employee', () => {
         })
     });
 
-    describe('getName() method', () => {});
+    describe('getName() method', () => {
+        it('Should get the object\'s name using getName()', () => {
+            const someName = 'Leonard Euler';
+            const e = new Employee(someName);
+            expect(e.getName()).toBe(someName);
+        })
+    });
 
-    describe('getId() method', () => {});
+    describe('getId() method', () => {
+        it('Should get the object\'s id using getId()', () => {
+            const someId = '2.71828';
+            const e = new Employee('Leonard Euler', someId);
+            expect(e.getId()).toBe(someId);
+        })
+    });
 
-    describe('getEmail() method', () => {});
+    describe('getEmail() method', () => {
+        it('Should get the object\'s email using getEmail()', () => {
+            const someEmail = 'euler@gmail.com';
+            const e = new Employee('Leonard Euler', '2.71828', someEmail);
+            expect(e.getEmail()).toBe(someEmail);
+        })
+    });
 
-    describe('getRole() method', () => {});
+    describe('getRole() method', () => {
+        it('Should get the object\'s role using getRole()', () => {
+            const someRole = 'Employee';
+            const e = new Employee('Leonard Euler', '2.71828', 'euler@gmail.com', someRole);
+            expect(e.getRole()).toBe(someRole);
+        })
+    });
 })
