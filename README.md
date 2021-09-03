@@ -66,7 +66,11 @@ https://www.mit.edu/~amini/LICENSE.md
 
 
 ## Tests
-Part of employee tests are available. More to come.
+Class tests are in the test folder.
+
+![alt text](assets/images/test-screenshot.png)
+
+(https://www.youtube.com/watch?v=fOOVUMRd39w) 
 
 ## Questions
 
