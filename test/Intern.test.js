@@ -16,12 +16,42 @@ describe('Intern', () => {
         });
     });
 
-    describe('id property', () => {});
+    describe('id property', () => {
+        it('Should set the id of the Intern using the constructor', () => {
+            const id = '24';
+            const i = new Intern('Garrett Kegel', id);
+            expect(i.id).toBe(id);
+        });
+    });
     
-    describe('email property', () => {});
-    describe('school property', () => {});
-    describe('getSchool() method', () => {});
+    describe('email property', () => {
+        it('Should set the email of the Intern using the constructor', () => {
+            const email = 'gkegel@gmail.com';
+            const i = new Intern('Garrett Kegel', '24', email);
+            expect(i.email).toBe(email);
+        });
+    });
+    describe('school property', () => {
+        it('Should set the school of the Intern using the constructor', () => {
+            const school = 'UC Davis';
+            const i = new Intern('Garrett Kegel', '24', 'gkegel@gmail.com', school);
+            expect(i.school).toBe(school);
+        });
+    });
+    describe('getSchool() method', () => {
+        it('Should get the Intern\'s school using getSchool()', () => {
+            const school = 'UC Davis';
+            const i = new Intern('Garrett Kegel', '24', 'gkegel@gmail.com', 'UC Davis');
+            expect(i.getSchool()).toBe(school);
+        });
+    });
 
 
-    describe('getRole() method', () => {});
+    describe('getRole() method', () => {
+        it('Should get the Intern\'s role using getRole()', () => {
+            const someRole = 'Intern';
+            const i = new Intern('Garrett Kegel', '24', 'gkegel@gmail.com', 'UC Davis');
+            expect(i.getRole()).toBe(someRole);
+        });
+    });
 })
