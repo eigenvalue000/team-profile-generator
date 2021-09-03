@@ -23,7 +23,7 @@ user prompt answers.
 ## Installation
 First, clone the repository to your local
 machine. Then use npm i to install the 
-necessary packagesfrom the package.json file. 
+necessary packages from the package.json file. 
 
 ## Usage
 The application will ask a sequence of questions
