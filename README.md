@@ -34,7 +34,10 @@ team-profile-generator folder.
 
 Screenshot
 
-![alt text](assets/images/screenshot.png)(https://www.youtube.com/watch?v=ioRajF2ZWag) 
+![alt text](assets/images/screenshot.png)
+
+Application Video
+(https://www.youtube.com/watch?v=ioRajF2ZWag) 
 
 
 ## License
@@ -70,6 +73,7 @@ Class tests are in the test folder.
 
 ![alt text](assets/images/test-screenshot.png)
 
+Tests Video
 (https://www.youtube.com/watch?v=fOOVUMRd39w) 
 
 ## Questions
