@@ -21,7 +21,7 @@ describe('Employee', () => {
             const id = '2.71828';
             const e = new Employee('Leonard Euler', id);
             expect(e.id).toBe(id);
-        })
+        });
     });
     
     describe('email property', () => {
@@ -29,7 +29,7 @@ describe('Employee', () => {
             const email = 'euler@gmail.com';
             const e = new Employee('Leonard Euler', '2.71828', email);
             expect(e.email).toBe(email);
-        })
+        });
     });
 
     describe('getName() method', () => {
@@ -37,7 +37,7 @@ describe('Employee', () => {
             const someName = 'Leonard Euler';
             const e = new Employee(someName);
             expect(e.getName()).toBe(someName);
-        })
+        });
     });
 
     describe('getId() method', () => {
@@ -45,7 +45,7 @@ describe('Employee', () => {
             const someId = '2.71828';
             const e = new Employee('Leonard Euler', someId);
             expect(e.getId()).toBe(someId);
-        })
+        });
     });
 
     describe('getEmail() method', () => {
@@ -53,7 +53,7 @@ describe('Employee', () => {
             const someEmail = 'euler@gmail.com';
             const e = new Employee('Leonard Euler', '2.71828', someEmail);
             expect(e.getEmail()).toBe(someEmail);
-        })
+        });
     });
 
     describe('getRole() method', () => {
@@ -61,6 +61,6 @@ describe('Employee', () => {
             const someRole = 'Employee';
             const e = new Employee('Leonard Euler', '2.71828', 'euler@gmail.com', someRole);
             expect(e.getRole()).toBe(someRole);
-        })
+        });
     });
 })
