@@ -16,15 +16,15 @@ describe('Employee', () => {
         });
     });
 
-    describe('id property');
+    describe('id property', () => {});
     
-    describe('email property');
+    describe('email property', () => {});
 
-    describe('getName() method');
+    describe('getName() method', () => {});
 
-    describe('getId() method');
+    describe('getId() method', () => {});
 
-    describe('getEmail() method');
+    describe('getEmail() method', () => {});
 
-    describe('getRole() method');
+    describe('getRole() method', () => {});
 })
