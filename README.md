@@ -34,7 +34,7 @@ team-profile-generator folder.
 
 Screenshot
 
-![alt text](assets/images/screenshot.png)(https://www.youtube.com/watch?v=ioRajF2ZWag) "team-profile-generator-video.mp4"
+![alt text](assets/images/screenshot.png)(https://www.youtube.com/watch?v=ioRajF2ZWag) 
 
 
 ## License
