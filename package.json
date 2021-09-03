@@ -3,5 +3,9 @@
     "inquirer": "^8.1.2",
     "inquirer-recursive": "^0.0.7",
     "jest": "^27.1.0"
+  },
+  "scripts": {
+    "test": "jest"
   }
 }
+
