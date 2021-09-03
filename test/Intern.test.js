@@ -19,12 +19,9 @@ describe('Intern', () => {
     describe('id property', () => {});
     
     describe('email property', () => {});
+    describe('school property', () => {});
+    describe('getSchool() method', () => {});
 
-    describe('getName() method', () => {});
-
-    describe('getId() method', () => {});
-
-    describe('getEmail() method', () => {});
 
     describe('getRole() method', () => {});
 })

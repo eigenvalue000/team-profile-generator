@@ -20,11 +20,7 @@ describe('Manager', () => {
     
     describe('email property', () => {});
 
-    describe('getName() method', () => {});
-
-    describe('getId() method', () => {});
-
-    describe('getEmail() method', () => {});
+    describe('officeNumber property', () => {});
 
     describe('getRole() method', () => {});
 })

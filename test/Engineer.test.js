@@ -20,11 +20,8 @@ describe('Engineer', () => {
     
     describe('email property', () => {});
 
-    describe('getName() method', () => {});
-
-    describe('getId() method', () => {});
-
-    describe('getEmail() method', () => {});
+    describe('github property', () => {});
+    describe('getGithub() method', () => {});
 
     describe('getRole() method', () => {});
 })
